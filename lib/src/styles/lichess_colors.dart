@@ -1,9 +1,12 @@
 import 'package:material_ui/material_ui.dart';
 
-class LichessColors._() {
+abstract final class LichessColors {
   // This class is not meant to be instantiated or extended; this constructor
   // prevents instantiation and extension.
-    static const MaterialColor primary = MaterialColor(_primaryPrimaryValue, <int, Color>{
+  LichessColors._();
+
+  // primary: green
+  static const MaterialColor primary = MaterialColor(_primaryPrimaryValue, <int, Color>{
     50: Color(0xFFE8F5E9),
     100: Color(0xFFC8E6C9),
     200: Color(0xFFA5D6A7),
@@ -16,6 +19,7 @@ class LichessColors._() {
     900: Color(0xFF1B5E20),
   });
   static const int _primaryPrimaryValue = 0xFF4CAF50;
+
   // secondary: green
   static const MaterialColor secondary = MaterialColor(_secondaryPrimaryValue, <int, Color>{
     50: Color(0xFFECF3E5),
