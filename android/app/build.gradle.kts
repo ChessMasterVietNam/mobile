@@ -36,7 +36,7 @@ android {
     defaultConfig {
         // Flag required by flutter_local_notifications package
         multiDexEnabled = true
-        applicationId = "org.lichess.mobileV2"
+        applicationId = "com.chessvietnam.app"
         minSdk = 26
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
